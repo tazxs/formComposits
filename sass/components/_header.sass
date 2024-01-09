@@ -1,0 +1,121 @@
+@import './_cta'
+.header__top
+    .nav
+        display: flex
+        align-items: center
+        margin-top: 6.3rem
+        .logo
+            margin-left: 10rem
+            a
+                display: flex
+                column-gap: 1.5rem
+                align-items: center
+                p
+                    font-size: 2rem
+                    font-weight: bold
+                    color: $clr-white
+        .nav__list
+            display: flex
+            column-gap: 3.5rem
+            margin-left: 5rem
+            li
+                &:nth-child(2)
+                    position: relative
+                    &:hover .none
+                        display: flex
+                        position: absolute
+                        flex-direction: column
+                        row-gap: 2rem
+                        left: 0
+                        z-index: 1rem
+                        width: 11rem
+                        height: 21rem
+                        z-index: 3
+                        padding-top: 1.5rem
+                        a:hover
+                            color: $clr-blue
+                    a
+                        &:hover
+                            color: $clr-white
+                &:nth-child(1)
+                    position: relative
+                    &:hover .none
+                        display: flex
+                        position: absolute
+                        flex-direction: column
+                        left: 0
+                        z-index: 1rem
+                        width: 11rem
+                        height: 25rem
+                        z-index: 3
+                        padding-top: 1.5rem
+                        a:hover
+                            color: $clr-blue
+                        li
+                            margin-bottom: 2rem
+                            &:nth-child(4)
+                                margin-bottom: 0.1rem
+                    a
+                        &:hover
+                            color: $clr-white
+
+            a
+                color: $clr-white
+                font-size: 1.6rem
+                font-weight: 500
+                transition: $transition
+                &:hover
+                    color: $clr-blue
+            .first
+                display: flex
+                column-gap: 0.7rem
+                align-items: center
+        .nav__last
+            display: flex
+            column-gap: 1rem
+            margin-left: 8rem
+            transition: $transition
+            &:hover
+                transform: scale(1.1)
+            h3
+                color: $clr-white
+                font-size: 1.8rem
+                font-weight: 600
+@media (max-width: 1024px)
+    .header
+        .container
+            .header__top
+                .nav
+                    .nav__list
+                        display: none
+                    .nav__last
+                        margin-left: 40rem
+                    .hamburger-menu
+                        display: block
+                        margin-left: 6rem
+                        cursor: pointer
+                    .hamburger-chek
+                        display: none
+                    .logo
+                        margin-left: 5rem
+@media (max-width: 320px)
+    .header
+        .container
+            width: 100vw
+            .header__top
+                .nav
+                    width: 100vw
+                    .nav__last
+                        display: none
+                    .logo
+                        margin-left: 2rem
+                        a
+                            img
+                                width: 13rem
+                                height: 3rem
+                    .hamburger-menu
+                        margin-left: 10rem
+                        i
+                            font-size: 3rem
+                            color: $clr-white
+                            cursor: pointer

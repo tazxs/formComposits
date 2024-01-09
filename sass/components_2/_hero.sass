@@ -1,0 +1,112 @@
+@import './_cta'
+.hero
+    .container
+        .hero__top
+            margin-top: 10.9rem
+            margin-bottom: 8rem
+            ul
+                display: flex
+                column-gap: 1rem
+                a
+                    color: $clr-grey
+                    font-size: 1.8rem
+                    font-weight: 500
+                    transition: $transition
+                    &:hover
+                        color: $clr-white
+                .last
+                    color: #A3A7A7
+        .hero__row
+            .hero__wrapper
+                display: grid
+                grid-template-columns: 45rem 70.3rem
+                grid-gap: 14.5rem
+                .hero__left
+                    img
+                        height: 50rem
+                .hero__right
+                    .hero__title
+                        color: $clr-grey
+                        font-size: 1.6rem
+                        margin-bottom: 3rem
+                        font-weight: 400
+                    .hero__subticle
+                        color: $clr-white
+                        font-size: 3rem
+                        font-weight: bold
+                        margin-bottom: 4rem
+                        max-width: 73rem
+                        line-height: 120%
+                    .hero__text
+                        max-width: 73rem
+                        color: #C6CACA
+                        font-size: 2rem
+                        font-weight: 400
+                        line-height: 110%
+@media (max-width: 1024px)
+    .hero
+        .container
+            margin-left: 5rem
+            margin-right: 5rem
+            .hero__top
+                margin-bottom: 5.3rem
+            .hero__row
+                .hero__wrapper
+                    display: flex
+                    flex-direction: column-reverse
+                    .hero__left
+                        img
+                            width: 92.4rem
+                            position: relative
+                            bottom: 13rem
+                        .none
+                            display: block
+                            max-width: 92.4rem
+                            font-size: 2rem
+                            color: #C6CACA
+                            font-weight: 400
+                            position: relative
+                            bottom: 8rem
+                    .hero__right
+                        .hero__title
+                            font-size: 1.6rem
+                        .hero__subticle
+                            max-width: 92.4rem
+                            margin-bottom: 5rem
+                        .hero__text
+                            display: none
+@media (max-width: 320px)
+    .hero
+        .container
+            margin-left: 2rem
+            margin-right: 2rem
+            .hero__top
+                margin-top: 3rem
+                margin-bottom: 3.2rem
+                ul
+                    column-gap: 0
+                    li
+                        a
+                            font-size: 1.2rem
+                            margin-right: 0.5rem
+                .last
+                    display: none
+                .none
+                    display: block
+                    width: 14.7rem
+                    color: #A3A7A7
+            .hero__row
+                .hero__wrapper
+                    .hero__right
+                        .hero__title
+                            margin-bottom: 1.5rem
+                        .hero__subticle
+                            max-width: 28rem
+                            font-variant: small-caps
+                            font-size: 1.8rem
+                            margin-bottom: 3rem
+                    .hero__left
+                        img
+                            width: 28rem
+                            height: 20rem
+                            border-radius: 2rem

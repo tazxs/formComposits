@@ -1,0 +1,58 @@
+@import './_cta'
+.products
+    margin-top: 23rem
+    margin-left: 12rem
+    margin-right: 12rem
+    .products__content
+        .product__title
+            color: $clr-white
+            font-size: 4.5rem
+            font-weight: bold   
+            margin-bottom: 6rem
+        .products__chek
+            display: grid
+            grid-template-columns: 480px 480px 450px
+            grid-gap: 2rem
+            .product__cart
+                background-color: #222525
+                border-radius: 2rem
+                transition: .2s all 
+                .top
+                    display: flex
+                    align-items: center
+                    padding: 0 4.5rem 4.5rem 4.5rem
+                    justify-content: space-between
+                    a
+                        transition: $transition
+                    p
+                        color: $clr-white
+                        font-size: 2rem
+                        font-weight: 600
+                .two
+                    align-items: flex-end
+                    p
+                        max-width: 34rem
+                &:hover
+                    transform: translateY(-1rem)
+@media (max-width: 1024px)
+    .products
+        margin-left: 5rem
+        .products__content
+            .product__title
+                font-size: 4.5rem
+                color: $clr-white
+                font-weight: bold
+            .products__chek
+                grid-template-columns: 29.5rem 29.5rem 29.5rem
+@media (max-width: 320px)
+    .products
+        margin-left: 2rem
+        margin-top: 8rem
+        .products__content
+            .product__title
+                font-size: 2.5rem
+                font-weight: 700
+                margin-bottom: 3rem
+                width: 28rem
+            .products__chek
+                grid-template-columns: 28rem

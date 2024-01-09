@@ -1,0 +1,202 @@
+@import './_cta'
+.footer
+    margin-top: 23rem
+    background: #131616
+    .footer__container
+        padding: 8rem 12rem 0 12rem
+        .footer__top
+            ul
+                display: flex
+                justify-content: space-between
+                .footer__info
+                    margin-right: 14rem
+                    .footer__number
+                        font-size: 3.5rem
+                        font-weight: bold
+                        color: $clr-white
+                        margin-bottom: 2.1rem
+                        transition: $transition
+                        &:hover
+                            transform: scale(1.05)
+                    .footer__email
+                        color: $clr-white
+                        font-weight: 500
+                        font-size: 2rem
+                        margin-bottom: 5.3rem
+                        transition: $transition
+                        &:hover
+                            color: $clr-blue
+            .underline
+                width: 1400px
+                height: 1px
+                background: rgba(255, 255, 255, 0.10)
+                margin-bottom: 5rem
+        .footer__row
+            .footer__content
+                display: flex
+                align-items: flex-start
+                .footer__left
+                    margin-right: -4.3rem
+                    display: flex
+                    column-gap: 13.7rem
+                    font-size: 1.7rem
+                    font-weight: 500
+                    h3
+                        font-size: 1.6rem
+                        color: $clr-grey
+                        text-transform: uppercase
+                        margin-bottom: 2.7rem
+                    li
+                        margin-bottom: 2.7rem
+                        white-space: nowrap
+                    a
+                        color: $clr-white
+                        transition: $transition
+                        &:hover
+                            color: $clr-blue
+                .footer__right
+                    margin-left: 34rem
+                    .footer__title
+                        color: #A3A7A7
+                        font-size: 1.7rem
+                        font-weight: 400
+                        margin-bottom: 4rem
+                        max-width: 45.6rem
+                    .footer__subticle
+                        a
+                            color: $clr-grey
+                            font-size: 1.7rem
+                            font-weight: 400
+                            border-bottom: 1px solid #6F7171
+                            width: 25.8rem
+                            margin-bottom: 0.7rem
+                            transition: $transition
+                            &:hover
+                                color: $clr-blue
+                                border-bottom: 1px solid $clr-blue
+                    .footer__last
+                        margin-top: 21.2rem
+                        display: flex
+                        column-gap: 8.9rem
+                        color: $clr-grey
+                        align-items: center
+                        font-size: 1.6rem
+                        p
+                            width: 21.1rem
+                        span
+                            a
+                                color: $clr-blue
+                                transition: $transition
+                                &:hover
+                                    color: $clr-white
+@media (max-width: 1024px)
+    .footer
+        .footer__container
+            padding: 5rem 5rem 0 5rem
+            .footer__top
+                .underline
+                    width: 924px
+                    height: 1px
+                ul
+                    .footer__info
+                        margin-right: 3rem
+            .footer__row
+                .footer__content
+                    .footer__right
+                        margin-left: 0rem
+                        width: 33rem
+                        .footer__last
+                            display: none
+                        .footer__title
+                            width: 33rem
+                    .footer__left
+                        column-gap: 6rem
+                        margin-right: 25.1rem
+                        ul
+                            li
+                                white-space: normal
+                        .footer__title
+                            max-width: 33rem
+            .footer__top-nout
+                display: block
+                margin-top: 5rem
+                .underline
+                    width: 924px
+                    height: 1px
+                    background: rgba(255, 255, 255, 0.10)
+                .footer__nav
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-top: 2.5rem
+                    padding-bottom: 2.5rem
+                    .none
+                        display: block
+                    p
+                        color: $clr-grey
+                        font-weight: 400
+                        font-size: 1.6rem
+                        a
+                            color: $clr-grey
+                            font-weight: 400
+                            font-size: 1.6rem
+@media (max-width: 320px)
+    .footer
+        margin-top: 8rem
+        .footer__container
+            padding: 3rem 0 0 2rem
+            .footer__top
+                ul
+                    display: flex
+                    flex-direction: column
+                    .footer__info
+                        .footer__number
+                            width: 16.8rem
+                            font-size: 2rem
+                            margin-top: 3rem
+                        .footer__email
+                            font-size: 1.5rem
+                            margin-bottom: 3rem
+                .underline
+                    width: 28rem
+            .footer__row
+                .footer__content
+                    display: flex
+                    flex-direction: column
+                    .footer__left
+                        ul
+                            li
+                                font-size: 1.3rem
+                            &:first-child
+                                width: 13.5rem
+                            &:last-child
+                                width: 13.5rem
+                                position: absolute
+                                left: 17rem
+                    .footer__right
+                        width: 28rem
+                        .footer__title
+                            display: none
+                        .footer__subticle
+                            margin-top: 2rem
+                        .none
+                            display: block
+                            font-size: 1.3rem
+                            color: #A3A7A7
+                            font-weight: 400
+                        p
+                            display: none
+            .footer__top-nout
+                .underline
+                    display: block
+                    width: 28rem
+                .footer__nav
+                    flex-direction: column
+                    align-items: flex-start
+                    row-gap: 1.5rem
+                    .none
+                        display: block
+                    p
+                        span
+                            a
+                                color: $clr-blue

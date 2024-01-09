@@ -1,0 +1,100 @@
+@import './_cta'
+.gallery
+    margin-top: 23.3rem
+    .container
+        .gallery__wrapper
+            display: grid
+            grid-template-areas: 'a b'
+            .gallery__left
+                grid-area: a
+                margin-left: 12rem
+                .gallery__title
+                    color: $clr-white
+                    font-size: 2rem
+                    font-weight: 600
+                    margin-bottom: 4rem
+                .gallery__subticle
+                    max-width: 60.5rem
+                    font-size: 2.3rem
+                    font-weight: 400
+                    color: $clr-grey
+                    line-height: 110%
+            .gallery__right
+                grid-area: b
+                .gallery__top
+                    gap: 52.3rem
+                    margin-bottom: 4rem
+                    display: flex
+                    align-items: center
+                    p
+                        color: $clr-white
+                        font-size: 2rem
+                        font-weight: 600
+                        text-transform: uppercase
+
+                    .last
+                        display: flex
+                        column-gap: 2rem
+                .gallery__row
+                    display: grid
+                    gap: 2rem
+                    grid-template-columns: repeat(2, 1fr)
+                    img
+                        transition: $transition
+                        &:hover
+                            transform: translateX(1rem)
+@media (max-width: 1024px)
+    .gallery
+        .container
+            .gallery__wrapper
+                grid-template-areas: 'a' 'b'
+                .gallery__left
+                    margin-left: 5rem
+                .gallery__right
+                    margin-left: 5rem
+                    margin-top: 10.3rem
+                    .gallery__top
+                        display: flex
+                        justify-content: space-between
+                        margin-right: 5rem
+                    .gallery__row
+                        display: flex
+                        column-gap: 2rem
+                        .none
+                            display: block
+@media (max-width: 320px)
+    .gallery
+        .container
+            width: 100vw
+            .gallery__wrapper
+                .gallery__left
+                    margin-left: 2rem
+                    .gallery__title
+                        font-size: 1.4rem
+                    .gallery__subticle
+                        font-size: 1.4rem
+                        max-width: 28rem
+                        color: #C6CACA
+                        font-weight: 400
+                        line-height: 110%
+                .gallery__right
+                    width: 100vw
+                    margin-left: 0
+                    .gallery__top
+                        display: flex
+                        margin-left: 2rem
+                        p
+                            font-size: 1.4rem
+                            font-weight: 600
+                        .none
+                            display: block
+                        a
+                            display: none
+                    .gallery__row
+                        display: flex
+                        margin-left: 0.2rem
+                        overflow: hidden
+                        img
+                            width: 26rem
+                        .none
+                            display: none

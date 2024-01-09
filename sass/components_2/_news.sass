@@ -1,0 +1,118 @@
+@import './_cta'
+.news
+    margin-top: 23rem
+    .container
+        .news__title
+            color: $clr-white
+            font-size: 4.5rem
+            font-weight: 700
+            margin-bottom: 6rem
+        .news__grid
+            display: grid
+            grid-template-columns: 43rem 43rem 43rem
+            grid-gap: 2rem
+            margin-bottom: 5rem
+            .news__block
+                padding: 4.5rem 5rem 4.5rem 5rem
+                background-color: #222525
+                border-radius: 2rem
+                transition: $transition
+                &:hover
+                    transform: translateY(-1rem)
+                p
+                    color: $clr-grey
+                    font-size: 1.6rem
+                    font-weight: 400
+                    margin-bottom: 2.5rem
+                h4
+                    font-size: 2rem
+                    font-weight: 600
+                    color: $clr-white
+                    margin-bottom: 2rem
+                h3
+                    max-width: 38rem
+                    color: #C6CACA
+                    font-size: 1.7rem
+                    font-weight: 400
+                    line-height: 110%
+                    margin-bottom: 21.8rem
+                .two
+                    margin-bottom: 20rem
+                .underline
+                    width: 34rem
+                    height: 0.1rem
+                    background-color: rgba(255, 255, 255, 0.10)
+                    margin-bottom: 2rem
+                a
+                    color: $clr-white
+                    font-size: 1.8rem
+                    font-weight: 600
+                    display: flex
+                    align-items: center
+                    column-gap: 1rem
+                    img
+                        display: flex
+                        align-items: center
+        .search-form
+            border: 1px solid rgba(255, 255, 255, 0.10)
+            border-radius: 50rem
+            display: inline-flex
+            background: #1B1E1E
+            padding: 2rem 4rem
+            font-weight: 600
+            outline: none
+            justify-content: space-between
+            width: 80vw
+            margin-bottom: 23rem
+            .search-form__txt
+                font-size: 1.8rem
+                width: 80vw
+                color: $clr-white
+            .search-form__btn
+                border: none
+@media (max-width: 1024px)
+    .news
+        margin-top: 13rem
+        .container
+            margin-left: 5rem
+            margin-right: 5rem
+            .news__grid
+                grid-template-columns: 45rem 45rem
+                .news__block
+                    &:last-child
+                        display: none
+            .search-form
+                width: 90vw
+@media (max-width: 320px)
+    .news
+        margin-top: 7.2rem
+        .container
+            margin-right: 0
+            margin-left: 2rem
+            .news__title
+                font-size: 2.5rem
+            .search-form
+                margin-bottom: 8rem
+            .news__grid
+                overflow: hidden
+                height: 26rem
+                grid-template-columns: 26rem 26rem
+                grid-template-rows: 26rem 26rem
+                margin-bottom: 1.5rem
+                .news__block
+                    padding: 2.5rem 2rem 0 2rem
+                    p
+                        font-size: 1.3rem
+                        margin-bottom: 1.5rem
+                    h4
+                        font-size: 1.4rem
+                        margin-bottom: 1.2rem
+                    h3
+                        font-size: 1.3rem
+                        margin-bottom: 4.2rem
+                    .underline
+                        width: 22rem
+                    a
+                        font-size: 1.4rem
+                    &:hover
+                        transform: translateY(0)
